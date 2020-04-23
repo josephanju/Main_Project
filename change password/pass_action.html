@@ -1,0 +1,12 @@
+<?php
+session_start();
+include'../dbconnect.php';
+           $username=$_SESSION['unm'];
+           $currentpassword = $_POST['cpassword'];
+           $newpassword = $_POST['npassword'];
+           $confirmnewpassword = $_POST['confirmpassword'];
+		   $sql="select * from tble_login where username='$_SESSION['unm']'";
+		   $row=mysqli_fetch_array(mysqli_query($con,$sql));
+		   echo $row;
+		   ?>
+		   

@@ -1,0 +1,200 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['unm']))
+{
+	header('location:../a/index.php');
+	exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: pink;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input {
+  width: 5%;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+</style>
+</head>
+<title> user | Home </title>
+ 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Interior Spa Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  
+     <link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+      
+	<link href="css/JiSlider.css" rel="stylesheet">
+	
+	<link href="css/simpleLightbox.css" rel='stylesheet' type='text/css' />
+
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<div>
+<center><h1> Pay Here... </h1><br>
+<form action="" method="post">
+Select Card Type : <select  style="width:400px;" name="card" placeholder="card type">
+                   <option value="visa">Visa</option>
+                   <option value="classic">Classic</option>
+                   <option value="mastercard">MasterCard</option>
+                   <option value="rupay">Rupay</option>
+				   <option value="mastero">Mastero</option>
+                   </select><br><br>
+Name On card: &nbsp <input style="width:400px;" type="text" name="name"><br><br>	
+Card Number:  &nbsp <input style="width:400px;" type="text" name="card"><br><br>	
+Expiry Date: &nbsp <input style="width:30px;" type="number" min="0" max="31" name="date" value="day"/>
+ &nbsp Month :&nbsp <select style="width:150px;" name="month">
+                   
+                   <option value="January">January(1)</option>
+                   <option value="classic">February(2)</option>
+				   <option value="January">March(3)</option>
+                   <option value="classic">April(4)</option>
+				   <option value="January">May(5)</option>
+                   <option value="classic">June(6)</option>
+				   <option value="January">July(7)</option>
+                   <option value="classic">Auguest(8)</option>
+				   <option value="January">Septmber(9)</option>
+                   <option value="classic">October(10)</option>
+				   <option value="January">November(11)</option>
+                   <option value="classic">December(12)</option>
+                   
+                   </select></option>
+                   
+    &nbsp Year :<input style="width:65px;" type="number" min="2019"  name="date" value="year"/>	<br> <br>
+  Cvv Number:<input style="width:400px;" type="password" name="cvv" value="***"><br><br>
+Total Amount:<input  style="width:400px;"type="text" name="amt"><br><br> 
+<input type="submit"style="width:175px;" value="Submit"> 
+				   </form>
+				   </div>
+				   </center>
+
+
+</body >
+
+
+<!-- Banner Slider js script file-->
+		<script src="js/JiSlider.js"></script>
+		<script>
+			$(window).load(function () {
+				$('#JiSlider').JiSlider({
+					color: '#fff',
+					start: 1,
+					reverse: false
+				}).addClass('ff')
+			})
+		</script>
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36251023-1']);
+			_gaq.push(['_setDomainName', 'jqueryscript.net']);
+			_gaq.push(['_trackPageview']);
+
+			(function () {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	<!-- //Banner Slider js script file-->
+	<!-- simpleLightbox -->
+	<script src="js/simpleLightbox.js"></script>
+	<script>
+		$('.proj_gallery_grid a').simpleLightbox();
+	</script>
+
+	<script defer src="js/jquery.flexslider.js"></script>
+	<!--Start-slider-script-->
+		<script type="text/javascript">
+		
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	  </script>
+
+	<script src="js/waypoints.min.js"></script> 
+	<script src="js/counterup.min.js"></script> 
+	<script>
+		jQuery(document).ready(function( $ ) {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000 
+			});
+		});
+	</script>
+	
+      <script  src="js/move-top.js"></script>
+      <script  src="js/easing.js"></script>
+      <script >
+         jQuery(document).ready(function ($) {
+         	$(".scroll").click(function (event) {
+         		event.preventDefault();
+         		$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+         	});
+         });
+      </script>
+     
+      <script>
+         $(document).ready(function () {
+         	
+         
+         	$().UItoTop({ easingType: 'easeOutQuart' });
+         
+         });
+      </script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>
